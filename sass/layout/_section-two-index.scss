@@ -1,0 +1,27 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advantage-list {
+    display: flex;
+}
+
+.advantage-list-item {
+    width: 270px;
+}
+
+.advantage-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icons-sec-two {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
