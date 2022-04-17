@@ -637,7 +637,6 @@ body {
 
 .footer {
   background-color: var(--bcg-footer-msec);
-  /* height: 252px; */
   padding-top: 60px;
   padding-bottom: 60px;
 }
