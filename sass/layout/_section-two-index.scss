@@ -9,10 +9,10 @@
 
 .advantage-list-item {
     width: 270px;
-}
 
-.advantage-list-item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .icons-sec-two {

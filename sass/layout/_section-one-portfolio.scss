@@ -60,19 +60,19 @@
 
 .card-list-item-wrapper {
     display: block;
-}
 
-.card-list-item-wrapper:hover,
-.card-list-item-wrapper:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-}
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
 
-.card-list-item-wrapper:hover .overlay,
-.card-list-item-wrapper:focus .overlay {
-    transform: translateY(0%);
+    &:hover .overlay,
+    &:focus .overlay {
+        transform: translateY(0%);
+    }
 }
 
 .card-list-item:not(:nth-child(3n)) {
