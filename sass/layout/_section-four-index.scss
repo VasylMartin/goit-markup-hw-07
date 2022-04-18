@@ -2,7 +2,7 @@
     background-color: #f5f4fa;
 }
 
-.cards {
+.team-list__cards {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 32px;
@@ -14,7 +14,7 @@
     width: 206px;
 }
 
-.team-links-li:not(:last-child) {
+.team-links__li:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -22,7 +22,7 @@
     display: flex;
 }
 
-.team-list-item {
+.team-list__item {
     width: 270px;
     height: 428px;
     background-color: var(--mtitle-hovbtn);

@@ -600,11 +600,11 @@ body {
   margin-left: auto;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-list-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -740,15 +740,15 @@ body {
   display: flex;
 }
 
-.advantage-list-item {
+.advantage-list__item {
   width: 270px;
 }
 
-.advantage-list-item:not(:last-child) {
+.advantage-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.icons-sec-two {
+.advantage-list__icons {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -767,7 +767,7 @@ body {
   display: flex;
 }
 
-.photo-list-item:not(:last-child) {
+.photo-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -779,7 +779,7 @@ body {
   background-color: #f5f4fa;
 }
 
-.cards {
+.team-list__cards {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -791,7 +791,7 @@ body {
   width: 206px;
 }
 
-.team-links-li:not(:last-child) {
+.team-links__li:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -799,7 +799,7 @@ body {
   display: flex;
 }
 
-.team-list-item {
+.team-list__item {
   width: 270px;
   height: 428px;
   background-color: var(--mtitle-hovbtn);
@@ -807,7 +807,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list-item:not(:last-child) {
+.team-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -815,7 +815,7 @@ body {
   display: flex;
 }
 
-.link-partner {
+.list-partners__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -827,12 +827,12 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-partner:hover, .link-partner:focus {
+.list-partners__link:hover, .list-partners__link:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
 
-.partner-logo:not(:last-child) {
+.list-partners__logo:not(:last-child) {
   margin-right: 30px;
 }
 

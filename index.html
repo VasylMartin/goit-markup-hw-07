@@ -22,9 +22,9 @@
         <nav class="navigation">
           <a href="/" class="logo"><span class="logo-first">Web</span>Studio</a>
           <ul class="nav-list">
-            <li class="nav-list-item"><a class="nav current" href="./index.html">Студия</a></li>
-            <li class="nav-list-item"><a class="nav" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav-list-item"><a class="nav" href="">Контакты</a></li>
+            <li class="nav-list__item"><a class="nav current" href="./index.html">Студия</a></li>
+            <li class="nav-list__item"><a class="nav" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-list__item"><a class="nav" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="nav-list">
@@ -61,9 +61,9 @@
         <div class="container">
           <h2 class="second-title none">В чем наше преимущество?</h2>
           <ul class="advantage-list">
-            <li class="advantage-list-item">
-              <div class="icons-sec-two">
-                <svg class="icon-sec-two" width="70px" height="70px">
+            <li class="advantage-list__item">
+              <div class="advantage-list__icons">
+                <svg class="advantage-list__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -74,9 +74,9 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="advantage-list-item">
-              <div class="icons-sec-two">
-                <svg class="icon-sec-two" width="70px" height="70px">
+            <li class="advantage-list__item">
+              <div class="advantage-list__icons">
+                <svg class="advantage-list__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -87,9 +87,9 @@
                 влечет за собой.
               </p>
             </li>
-            <li class="advantage-list-item">
-              <div class="icons-sec-two">
-                <svg class="icon-sec-two" width="70px" height="70px">
+            <li class="advantage-list__item">
+              <div class="advantage-list__icons">
+                <svg class="advantage-list__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -100,9 +100,9 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantage-list-item">
-              <div class="icons-sec-two">
-                <svg class="icon-sec-two" width="70px" height="70px">
+            <li class="advantage-list__item">
+              <div class="advantage-list__icons">
+                <svg class="advantage-list__icon" width="70px" height="70px">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -121,19 +121,19 @@
         <div class="container">
           <h2 class="second-title title-sec-three">Чем мы занимаемся</h2>
           <ul class="photo-list">
-            <li class="photo-list-item">
+            <li class="photo-list__item">
               <div class="thumb">
                 <img src="./images/imgnote.jpg" width="370" alt="Печатает на клавиатуре" />
                 <p class="title-three label-sec-three">Десктопные приложения</p>
               </div>
             </li>
-            <li class="photo-list-item">
+            <li class="photo-list__item">
               <div class="thumb">
                 <img src="./images/imgphone.jpg" width="370" alt="Смотрит в телефон" />
                 <p class="title-three label-sec-three">Мобильные приложения</p>
               </div>
             </li>
-            <li class="photo-list-item">
+            <li class="photo-list__item">
               <div class="thumb">
                 <img src="./images/imgtab.jpg" width="370" alt="Смотрит в планшет" />
                 <p class="title-three label-sec-three">Дизайнерские решения</p>
@@ -147,34 +147,34 @@
         <div class="container">
           <h2 class="second-title sec-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-list-item">
+            <li class="team-list__item">
               <img src="./images/productdesigner.jpg" alt="productdesigner" width="270" />
-              <div class="cards">
+              <div class="team-list__cards">
                 <h3 class="card-title">Игорь Демьяненко</h3>
                 <p class="card-info">Product Designer</p>
                 <ul class="team-links">
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -184,34 +184,34 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list__item">
               <img src="./images/frontend.jpg" alt="frontend" width="270" />
-              <div class="cards">
+              <div class="team-list__cards">
                 <h3 class="card-title">Ольга Репина</h3>
                 <p class="card-info">Frontend Developer</p>
                 <ul class="team-links">
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -221,34 +221,34 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list__item">
               <img src="./images/marketing.jpg" alt="marketing" width="270" />
-              <div class="cards">
+              <div class="team-list__cards">
                 <h3 class="card-title">Николай Тарасов</h3>
                 <p class="card-info">Marketing</p>
                 <ul class="team-links">
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -258,34 +258,34 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-list__item">
               <img src="./images/ui.jpg" alt="ui" width="270" />
-              <div class="cards">
+              <div class="team-list__cards">
                 <h3 class="card-title">Михаил Ермаков</h3>
                 <p class="card-info">UI Designer</p>
                 <ul class="team-links">
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-links-li">
+                  <li class="team-links__li">
                     <a href="" class="link">
                       <svg width="20px" height="20px" class="link-icon">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -303,43 +303,43 @@
         <div class="container">
           <h2 class="second-title sec-title">Постоянные клиенты</h2>
           <ul class="list-partners">
-            <li class="partner-logo">
-              <a href="" class="link-partner"
+            <li class="list-partners__logo">
+              <a href="" class="list-partners__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-logo-one"></use>
                 </svg>
               </a>
             </li>
-            <li class="partner-logo">
-              <a href="" class="link-partner"
+            <li class="list-partners__logo">
+              <a href="" class="list-partners__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-logo-two"></use>
                 </svg>
               </a>
             </li>
-            <li class="partner-logo">
-              <a href="" class="link-partner"
+            <li class="list-partners__logo">
+              <a href="" class="list-partners__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-logo-three"></use>
                 </svg>
               </a>
             </li>
-            <li class="partner-logo">
-              <a href="" class="link-partner"
+            <li class="list-partners__logo">
+              <a href="" class="list-partners__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-logo-four"></use>
                 </svg>
               </a>
             </li>
-            <li class="partner-logo">
-              <a href="" class="link-partner"
+            <li class="list-partners__logo">
+              <a href="" class="list-partners__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-logo-five"></use>
                 </svg>
               </a>
             </li>
-            <li class="partner-logo">
-              <a href="" class="link-partner"
+            <li class="list-partners__logo">
+              <a href="" class="list-partners__link"
                 ><svg width="106px" height="60px">
                   <use href="./images/sprite.svg#icon-logo-six"></use>
                 </svg>
