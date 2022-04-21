@@ -7,7 +7,7 @@
 }
 
 .address {
-    color: #ffffff;
+    color: var(--mtitle-hovbtn);
     font-style: normal;
     margin-bottom: 9px;
 }
@@ -19,7 +19,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--mtitle-hovbtn);
     margin-bottom: 20px;
 }
 
@@ -35,7 +35,7 @@
     height: 100%;
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
-    color: #ffffff;
+    color: var(--mtitle-hovbtn);
     overflow: auto;
     transform: translateY(101%);
     transition: transform 250ms linear;
@@ -46,5 +46,5 @@
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text);
 }

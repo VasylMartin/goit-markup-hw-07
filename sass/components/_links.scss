@@ -50,12 +50,12 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    fill: #ffffff;
+    fill: var(--mtitle-hovbtn);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        background-color: #2196f3;
+        background-color: var(--hov-nav-contacts);
     }
 }
 
@@ -67,14 +67,14 @@
     background-color: var(--mtitle-hovbtn);
     justify-content: center;
     align-items: center;
-    fill: #afb1b8;
+    fill: var(--team-links-hover);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
         background-color: var(--hov-nav-contacts);
-        fill: #ffffff;
+        fill: var(--mtitle-hovbtn);
     }
 }
 

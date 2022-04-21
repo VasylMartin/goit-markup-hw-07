@@ -9,6 +9,9 @@
   --bcg-btn-hov: #2196f3;
   --bcg-footer-msec: #2f303a;
   --footer-contacts: rgba(255, 255, 255, 0.6);
+  --team-links-hover: #afb1b8;
+  --hero-bg: #c4c4c4;
+  --logo-color-header: #000000;
 }
 
 .none {
@@ -22,7 +25,7 @@
   clip: rect(0 0 0 0);
 }
 
-a {
+.link-global-line {
   text-decoration-line: none;
 }
 
@@ -69,16 +72,6 @@ body {
   margin-left: auto;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
-}
-
 .follow-btn-footer {
   width: 200px;
   height: 50px;
@@ -87,7 +80,7 @@ body {
   justify-content: space-between;
   cursor: pointer;
   background-color: var(--bcg-mbtn);
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -109,7 +102,7 @@ body {
 .mbtn {
   cursor: pointer;
   background-color: var(--bcg-mbtn);
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -146,13 +139,13 @@ body {
 
 .btn:hover, .btn:focus {
   background-color: var(--bcg-btn-hov);
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .current-btn {
   background-color: var(--bcg-btn-hov);
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -163,7 +156,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: var(--mtitle-hovbtn);
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   padding: 0;
@@ -175,7 +168,7 @@ body {
 }
 
 .modal-close-btn:hover, .modal-close-btn:focus {
-  fill: #2196f3;
+  fill: var(--hov-nav-contacts);
 }
 
 .modal-submit {
@@ -188,8 +181,8 @@ body {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: var(--mtitle-hovbtn);
+  background-color: var(--hov-nav-contacts);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -200,7 +193,17 @@ body {
 }
 
 .modal-submit:hover, .modal-submit:focus {
-  background-color: #188CE8;
+  background-color: var(--bcg-mbtn-hov);
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .nav {
@@ -254,12 +257,12 @@ body {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  fill: #ffffff;
+  fill: var(--mtitle-hovbtn);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover, .footer-link:focus {
-  background-color: #2196f3;
+  background-color: var(--hov-nav-contacts);
 }
 
 .link {
@@ -270,13 +273,13 @@ body {
   background-color: var(--mtitle-hovbtn);
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
+  fill: var(--team-links-hover);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover, .link:focus {
   background-color: var(--hov-nav-contacts);
-  fill: #ffffff;
+  fill: var(--mtitle-hovbtn);
 }
 
 .mtitle {
@@ -341,7 +344,7 @@ body {
   bottom: 0;
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,7 +360,7 @@ body {
 }
 
 .address {
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   font-style: normal;
   margin-bottom: 9px;
 }
@@ -369,7 +372,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   margin-bottom: 20px;
 }
 
@@ -385,7 +388,7 @@ body {
   height: 100%;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   overflow: auto;
   transform: translateY(101%);
   transition: transform 250ms linear;
@@ -396,7 +399,7 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text);
 }
 
 .backdrop {
@@ -424,7 +427,7 @@ body {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: #FFFFFF;
+  background-color: var(--mtitle-hovbtn);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
@@ -442,7 +445,7 @@ body {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-nav-btn);
   margin-bottom: 12px;
 }
 
@@ -452,7 +455,7 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--text);
   margin-bottom: 4px;
 }
 
@@ -468,7 +471,7 @@ body {
 }
 
 .modal-input:hover, .modal-input:focus {
-  border-color: #2196f3;
+  border-color: var(--hov-nav-contacts);
   outline: none;
 }
 
@@ -478,7 +481,7 @@ body {
 
 .modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
-  fill: #2196f3;
+  fill: var(--hov-nav-contacts);
 }
 
 .modal-message {
@@ -496,7 +499,7 @@ body {
 }
 
 .modal-message:hover, .modal-message:focus {
-  border-color: #2196f3;
+  border-color: var(--hov-nav-contacts);
   outline: none;
   cursor: pointer;
 }
@@ -528,7 +531,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color: var(--hov-nav-contacts);
 }
 
 .contact-form-checkbox-label {
@@ -537,7 +540,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -557,14 +560,14 @@ body {
 
 .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
   background-image: url("../images/check.svg");
-  background-color: #2196f3;
+  background-color: var(--hov-nav-contacts);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before,
 .contact-form-checkbox:hover + .contact-form-checkbox-label::before {
-  outline: solid #2196F3;
+  outline: solid var(--hov-nav-contacts);
 }
 
 .contact-form-checkbox-wrapper {
@@ -574,8 +577,13 @@ body {
   justify-content: center;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  color: #000000;
+  color: var(--logo-color-header);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -587,7 +595,7 @@ body {
 }
 
 .logo-first {
-  color: #2196f3;
+  color: var(--hov-nav-contacts);
 }
 
 .navigation {
@@ -635,6 +643,11 @@ body {
   margin-right: 10px;
 }
 
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer {
   background-color: var(--bcg-footer-msec);
   padding-top: 60px;
@@ -642,7 +655,7 @@ body {
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--mtitle-hovbtn);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -698,14 +711,14 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: var(--mtitle-hovbtn);
   padding-left: 16px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .follow-input:hover, .follow-input:focus {
-  border-color: #2196f3;
+  border-color: var(--hov-nav-contacts);
   outline: none;
 }
 
@@ -714,7 +727,7 @@ body {
 }
 
 .sec-one {
-  background-color: #c4c4c4;
+  background-color: var(--hero-bg);
   height: 600px;
   text-align: center;
   padding-top: 200px;
@@ -753,7 +766,7 @@ body {
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: var(--bcg-btn);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -776,7 +789,7 @@ body {
 }
 
 .section-four {
-  background-color: #f5f4fa;
+  background-color: var(--bcg-btn);
 }
 
 .team-list__cards {
@@ -821,15 +834,15 @@ body {
   height: 92px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--team-links-hover);
   border-radius: 4px;
-  fill: #afb1b8;
+  fill: var(--team-links-hover);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-partners__link:hover, .list-partners__link:focus {
-  fill: #2196f3;
-  border: 1px solid #2196f3;
+  fill: var(--hov-nav-contacts);
+  border: 1px solid var(--hov-nav-contacts);
 }
 
 .list-partners__logo:not(:last-child) {
@@ -879,16 +892,6 @@ body {
 .market {
   padding-top: 90px;
   padding-bottom: 98px;
-}
-
-.btn-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.btn-list-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .card-list {

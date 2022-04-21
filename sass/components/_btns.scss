@@ -6,7 +6,7 @@
     justify-content: space-between;
     cursor: pointer;
     background-color: var(--bcg-mbtn);
-    color: #ffffff;
+    color: var(--mtitle-hovbtn);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -29,7 +29,7 @@
 .mbtn {
     cursor: pointer;
     background-color: var(--bcg-mbtn);
-    color: #ffffff;
+    color: var(--mtitle-hovbtn);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -68,7 +68,7 @@
     &:hover,
     &:focus {
         background-color: var(--bcg-btn-hov);
-        color: #ffffff;
+        color: var(--mtitle-hovbtn);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
             0px 1px 2px rgba(0, 0, 0, 0.08),    
             0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -77,7 +77,7 @@
 
 .current-btn {
     background-color: var(--bcg-btn-hov);
-    color: #ffffff;
+    color: var(--mtitle-hovbtn);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -90,7 +90,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: var(--mtitle-hovbtn);
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
     padding: 0;
@@ -102,7 +102,7 @@
 
     &:hover,
     &:focus {
-        fill: #2196f3;
+        fill: var(--hov-nav-contacts);
     }
 }
 
@@ -116,8 +116,8 @@
     align-items: center;
     justify-content: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--mtitle-hovbtn);
+    background-color: var(--hov-nav-contacts);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -128,6 +128,16 @@
 
     &:hover,
     &:focus {
-        background-color: #188CE8;
+        background-color: var(--bcg-mbtn-hov);
     }
+}
+
+.btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-list-item:not(:last-child) {
+    margin-right: 8px;
 }
